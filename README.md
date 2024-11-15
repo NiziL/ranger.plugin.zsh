@@ -1,7 +1,10 @@
 # ranger.plugin.zsh
 
-Ranger is a tiny plugin to provide prompt element for [ranger](https://github.com/ranger/ranger).  
-Especially, it is used to quickly have an idea of the current `RANGER_LEVEL`, displaying nothing when the environment variable is unset, something when it is equals to 1, and something else when it is greater than 1.
+Ranger is a tiny plugin for [ranger](https://github.com/ranger/ranger) integration into oh-my-zsh.
+
+It provides: 
+- a `rr` function to automatically change the current directory when quitting ranger.
+- a `ranger_prompt` function to customize your `PROMPT`, so you could quickly have an idea of the current `RANGER_LEVEL`.
 
 ## Installation
 
@@ -12,11 +15,9 @@ For most installation, you could simply do
 git clone https://github.com/NiziL/ranger.plugin.zsh ~/.oh-my-zsh/custom/plugins/ranger
 ```
 
-## Usage
+## configuration
 
-The plugin provides a `ranger_prompt` function you can use to customize `PROMPT`.
-
-It also defines few configuration variables:
+The plugin relies on few configuration variables:
 
 | Name | Description | Default |
 | ---- | ----------- | ------- |
